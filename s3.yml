@@ -1,0 +1,4 @@
+---
+- hosts: aws-s3-servers
+  roles:
+    - s3volume
