@@ -19,8 +19,8 @@ subnet_id: "subnet-d44c92fa"
 
 
 
-# aws_access_key: "AKIAJUE3ORH5HI5KR52A"
-# aws_secret_key: "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"
+# aws_access_key: "invalid"
+# aws_secret_key: "invalid"
 # aws_keypair: "key-aws-demo" #pem file name
 # aws_acct_vpc_id: "vpc-0e554f75"
 # aws_vpc_subnet: "subnet-d44c92fa"
