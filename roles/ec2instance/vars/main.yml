@@ -1,14 +1,14 @@
 ---
 aws_access_key: ""
 aws_secret_key: ""
-aws_acct_vpc_id: ""
-aws_group: "{{ app_name }}-{{ server_env }}"
-aws_instance_type: ""
-aws_quantity: ""
-aws_region: "us-east-1"
-aws_vpc_subnet: ""
-aws_image: ""
 aws_keypair: ""
+aws_acct_vpc_id: "vpc-0e554f75"
+aws_vpc_subnet: "subnet-d44c92fa"
+aws_group: "{{ app_name }}-{{ server_env }}"
+aws_instance_type: "t2.micro"
+aws_image: "ami-0ac019f4fcb7cb7e6"
+aws_region: "us-east-1"
 aws_instance_tag: '{"Name":"{{ app_name }}_{{ server_env }}_","Group1":"{{ app_name }}_{{ server_env }}","Group2":"{{ app_name }}_{{ server_env }}_"}'
 app_name: test
 server_env: qa
+aws_quantity: "1"

@@ -1,5 +1,5 @@
 [aws-elb-servers]
-10.35.10.20 ansible_user=vagrant ansible_ssh_private_key_file="/home/dbezerra/Documents/ansible/glpi-atualizado/.vagrant/machines/glpi-atualizado/virtualbox/private_key"
+35.171.162.155 ansible_ssh_private_key_file="key.pem"
 
 [aws-s3-servers]
-10.35.10.20 ansible_user=vagrant ansible_ssh_private_key_file="/home/dbezerra/Documents/ansible/glpi-atualizado/.vagrant/machines/glpi-atualizado/virtualbox/private_key"
+35.171.162.155 ansible_ssh_private_key_file="key.pem"
