@@ -1,5 +1,4 @@
-[aws-elb-servers]
-35.171.162.155 ansible_ssh_private_key_file="key.pem"
+[local]
+localhost ansible ansible_user="ubuntu"
 
-[aws-s3-servers]
-35.171.162.155 ansible_ssh_private_key_file="key.pem"
+[webserver]
