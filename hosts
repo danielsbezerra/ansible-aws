@@ -1,4 +1,6 @@
 [local]
 localhost ansible ansible_user="ubuntu"
 
-[webserver]
+[mysql-servers]
+
+[aws-s3-servers]

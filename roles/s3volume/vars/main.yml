@@ -1,0 +1,2 @@
+s3-object: "/my/desired/key.txt"
+s3-source: "/usr/local/file.txt""

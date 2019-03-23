@@ -1,34 +1,16 @@
 ---
-
-region: us-east-1
-instance_type: t2.micro
-ami: ami-0ac019f4fcb7cb7e6 # 18.04 LTS
-project_name: testing
-env: staging
-app_code_user: "ubuntu" # remote user
-hoststring: "ansible_ssh_user=ubuntu ansible_ssh_private_key_file=/key.pem"
+# aws_access_key: ""
+# aws_secret_key: ""
+aws_keypair: "proposify-qa.pem" #pem file name
+aws_acct_vpc_id: "vpc-0e554f75"
+aws_vpc_subnet: "subnet-d44c92fa"
+aws_group: "{{ app_name }}-{{ server_env }}"
+aws_instance_type: "t2.micro"
+aws_image: "ami-0ac019f4fcb7cb7e6" # 18.04 LTS
+aws_region: "us-east-1"
+aws_instance_tag: '{"Name":"{{ app_name }}_{{ server_env }}_","Group1":"{{ app_name }}_{{ server_env }}","Group2":"{{ app_name }}_{{ server_env }}_"}'
+app_name: proposify
+server_env: qa
+aws_quantity: "1"
+hoststring: "ansible_ssh_user=ubuntu ansible_ssh_private_key_file=~/.ssh//ssh-key-jenkins.pem"
 hostpath: "/hosts"
-subnet_id: "subnet-d44c92fa"
-
-
-
-
-
-
-
-
-
-
-# aws_access_key: "invalid"
-# aws_secret_key: "invalid"
-# aws_keypair: "key-aws-demo" #pem file name
-# aws_acct_vpc_id: "vpc-0e554f75"
-# aws_vpc_subnet: "subnet-d44c92fa"
-# aws_group: "{{ app_name }}-{{ server_env }}"
-# aws_instance_type: "t2.micro"
-# aws_image: "ami-0ac019f4fcb7cb7e6"
-# aws_region: "us-east-1"
-# aws_instance_tag: '{"Name":"{{ app_name }}_{{ server_env }}_","Group1":"{{ app_name }}_{{ server_env }}","Group2":"{{ app_name }}_{{ server_env }}_"}'
-# app_name: test
-# server_env: qa
-# aws_quantity: "1"

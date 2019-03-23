@@ -1,0 +1,12 @@
+- name: Create an empty bucket
+  s3:
+    bucket: mybucket
+    mode: create
+    permission: public-read
+
+- name: PUT an object into bucket
+  s3:
+    bucket: mybucket
+    object: {{ s3-object }}
+    src: {{ s3-source }}
+    mode: put

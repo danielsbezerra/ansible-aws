@@ -1,3 +1,4 @@
 ---
 - import_playbook: ec2.yml
 - import_playbook: s3.yml
+- import_playbook: mysql.yml
